@@ -1,0 +1,90 @@
+#father
+			{
+				border: 0px solid red;
+				width : 1300px;
+				height: 2250px;
+				margin: auto;
+			}
+			#logo{
+				/*border: 1px solid black;*/
+				height: 60px;
+				width: 1300px;
+			}
+			.top{
+				/*border: 1px solid blue;*/
+				height: 60px;
+				width: 431px;
+				padding-top: 10px;
+				float: left;
+				
+			}
+			#top{
+				padding-top: 14px;
+				height: 45px;
+				padding-top: 25px;
+				text-align: center;
+			}
+			#menu{
+				border:  0px solid green;
+				height: 50px;
+				width: 1300px;
+				background-color: black;
+				padding-top: 1px;
+
+								
+			}
+			
+			ul li{
+				display: inline;
+				color: white;
+
+			}
+			#product{
+				border: 0px solid red;
+				width: 1300px;
+				height: 558px;
+			}
+			#product_top{
+				border: 0px solid blue;
+				width: 100%;
+				height: 41px;
+				padding-top: 13px;
+			}
+			#product_bottom{
+				border: 0px black solid ;
+				width: 100%;
+				height: 500px;
+				float: left;
+			}
+			#product_bottom_left{
+				border: 0px solid red;
+				width: 200px;
+				height: 509px;
+				float: left;
+				
+			}
+			#product_bottom_right{
+				border: 0px solid blue;
+				width: 1096px;
+				height: 500px;
+				float: left;
+			}
+			#big{
+				border: 0px solid red;
+				width: 544px;
+				height: 248px;
+				float: left;
+			}
+			.small{
+				border: 0px solid black;
+				width: 180px;
+				height: 248px;
+				float: left;
+				text-align: center;
+			}
+			#bottom{
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+			}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<script>
+			function init()
+			{
+				window.setInterval("img1()",3000);
+				window.setInterval("adImg()",3000);
+			}
+			
+			//轮播图函数
+			var i=1;
+			var imgNum=3;//轮播图数量
+			function img1()
+			{
+				i=(i%imgNum)+1;
+				document.getElementById("lbImg").src="../img/"+i+".jpg";
+			}
+			
+		</script>
+	</head>
+	<body onload="init()">
+		<div id="father">
+			
+			<!--定时弹出广告图片-->
+			<img src="../img/small09.jpg" align="center" style="display: none;"/>
+			
+			<!--1.logo部分-->
+			<div id="logo">
+				<div class="top">
+					<img src="../img/logo2.png"  height="48px"/>
+				</div>
+				<div class="top">
+					<img src="../img/header.png" height="48px"/>
+				</div>
+				<div class="top" id="top">
+					<a href="#">登录</a>&nbsp;&nbsp;
+					<a href="#">注册</a>&nbsp;&nbsp;
+					<a href="#">购物车</a>
+				</div>
+			</div>
+			<!--2.导航栏部分-->
+			<div id="menu">
+				<ul>
+					<a href="#"><li style="font-size: 21px;">首页</li></a>&nbsp;&nbsp;
+					<a href="#"><li>手机数码</li></a>&nbsp;&nbsp;
+					<a href="#"><li>家用电器</li></a>&nbsp;&nbsp;
+					<a href="#"><li>鞋靴箱包</li></a>&nbsp;&nbsp;
+					<a href="#"><li>孕婴保健</li></a>&nbsp;&nbsp;
+					<a href="#"><li>奢饰品</li></a>
+				</ul>
+			</div>
+			<!--3.轮播图部分-->
+			<div>
+				<img src="../img/1.jpg" width="100%" id="lbImg"/>
+			</div>
+			<!--4.最新商品-->
+			<div id="product">
+				<div id="product_top">&nbsp;&nbsp;&nbsp;
+					<span style="font-size: 25px;">
+						最新商品
+					</span >&nbsp;&nbsp;&nbsp;
+					<img src="../img/title2.jpg"/>
+				</div>
+				<div id="product_bottom">
+					<div id="product_bottom_left">
+						<img src="../img/big01.jpg" height="100%" width="100%"/>
+					</div>
+					
+					<div id="product_bottom_right">
+						<div id="big">
+							<a href="#"><img src="../img/middle01.jpg" height="100%" width="100%"/></a>
+						</div>
+						<div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div>
+						<div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--5.广告图片-->
+			<div>
+				<img src="../img/ad.jpg" width="100%"/>
+			</div>
+			<!--6.热门商品-->
+			<div id="product">
+				<div id="product_top">&nbsp;&nbsp;&nbsp;
+					<span style="font-size: 25px;">
+						热门商品
+					</span >&nbsp;&nbsp;&nbsp;
+					<img src="../img/title2.jpg"/>
+				</div>
+				<div id="product_bottom">
+					<div id="product_bottom_left">
+						<img src="../img/big01.jpg" height="100%" width="100%"/>
+					</div>
+					
+					<div id="product_bottom_right">
+						<div id="big">
+							<a href="#"><img src="../img/middle01.jpg" height="100%" width="100%"/></a>
+						</div>
+						<div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div>
+						<div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small02.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small03.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div><div class="small">
+							<a href="#"><img src="../img/small04.jpg"/></a>
+							<a href="#"><p style="color: gray;">显示器</p></a>
+							<p style="color: red;">¥499</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--7.广告图片-->
+			<div>
+				<img src="../img/footer.jpg" width="100%"/>
+			</div>
+			<!--8.友情链接和版权信息-->
+			<div id="bottom">
+				<br />	<br /><br />	<br />
+					<a href="#">关于我们</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">联系我们</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">招贤纳士</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">法律声明</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">支付方式</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">配送方式</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">服务声明</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">广告声明</a>&nbsp;&nbsp;&nbsp;<br />	<br />
+					Copyright © 2005-2016 XXX商城 版权所有
+			</div>
+		</div>
+		
+	</body>
+</html>

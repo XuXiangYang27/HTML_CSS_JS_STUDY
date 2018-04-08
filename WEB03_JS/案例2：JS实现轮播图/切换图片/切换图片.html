@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: 1px solid red;
+				width: 500px;
+				g=height: 300px;
+				margin: auto;
+				/*margin auto查一下是什么意思*/
+				text-align: center;
+			}
+		</style>
+		<script>
+			var i=1;
+			function changeImg()
+			{
+				i=(i)%3+1;
+				document.getElementById("img1").src="../../img/"+i+".jpg"
+			}
+		</script>
+	</head>
+	<body>
+		<div id="">
+			<input type="button"  onclick="changeImg()" value="下一张"/>
+			<img src="../../img/1.jpg" width="100%" id="img1"/>
+		</div>
+	</body>
+</html>

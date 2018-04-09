@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格隔行换色</title>
+		<script>
+			 function highlightShow(id ,flag){
+			 	var trEle=document.getElementById(id);
+			 	if(flag==1)
+			 		trEle.style.backgroundColor="red";
+			 	else
+			 		trEle.style.backgroundColor="white";
+			 }
+		</script>
+	</head>
+	<body>
+		<table border="1" width="500" height="50" align="center" id="tbl">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr onmouseover="highlightShow('tr1',1)" id="tr1" onmouseout="highlightShow('tr1',2)" >
+					<td>1</td>
+					<td>张三</td>
+					<td>22</td>
+				</tr>
+				<tr  onmouseover="highlightShow('tr2',1)" id="tr2" onmouseout="highlightShow('tr2',2)">
+					<td>2</td>
+					<td>李四</td>
+					<td>25</td>
+				</tr>
+				<tr  onmouseover="highlightShow('tr3',1)" id="tr3" onmouseout="highlightShow('tr3',2)">
+					<td>3</td>
+					<td>王五</td>
+					<td>27</td>
+				</tr>
+				<tr  onmouseover="highlightShow('tr4',1)" id="tr4" onmouseout="highlightShow('tr4',2)">
+					<td>4</td>
+					<td>赵六</td>
+					<td>29</td>
+				</tr>
+				<tr  onmouseover="highlightShow('tr5',1)" id="tr5" onmouseout="highlightShow('tr5',2)">
+					<td>5</td>
+					<td>田七</td>
+					<td>30</td>
+				</tr>
+				<tr  onmouseover="highlightShow('tr6',1)" id="tr6" onmouseout="highlightShow('tr6',2)">
+					<td>6</td>
+					<td>汾九</td>
+					<td>20</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

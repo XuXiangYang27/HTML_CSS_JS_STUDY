@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<script src="../../js/jquery-1.8.3.js"></script>
+		<script>
+			$(function(){
+				//1 选择有id属性的div
+				$("#btn1").click(function(){
+					$("div[id]").css("background-color"," #FF0000"); 
+				});
+				 
+				//2 选择有id属性的值为two的div
+				$("#btn2").click(function(){
+					$("div[id='two']").css("background-color","blue"); 
+				});
+				//3 
+				$("#btn3").click(function(){
+					$("ul>li:first-child").css("background-color","blue"); 
+				});
+			})
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="选择有id属性的div"/>
+		<input type="button" id="btn2" value="选择有id属性的值为two的div"/>
+		<input type="button" id="btn3" value="测试first"/>
+		<hr/>
+		<div id="one">
+			<div class="mini">
+				111
+			</div>
+		</div>
+		
+		<div id="two">
+			<div class="mini">
+				222
+			</div>
+			<div class="mini">
+				333
+			</div>
+		</div>
+		
+		<div id="three">
+			<div class="mini">
+				444
+			</div>
+			<div class="mini">
+				555
+			</div>
+			<div class="mini">
+				666
+			</div>
+		</div>
+		
+		<span id="four">
+			
+		</span>
+		<ul>
+			    <li>list item 1</li>
+			    <li>list item 2</li>
+			    <li>list item 3</li>
+			    <li>list item 4</li>
+			    <li>list item 5</li>
+		</ul>
+		<ul>
+			    <li>list item 11</li>
+			    <li>list item 22</li>
+			    <li>list item 33</li>
+			    <li>list item 44</li>
+			    <li>list item 55</li>
+		</ul>
+	</body>
+</html>
